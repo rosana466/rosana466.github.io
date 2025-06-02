@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+.navbar {
+    background: #e0e6ed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left input {
+    width: 400px;
+    margin-left: 10px;
+    border: 1px solid #bbb;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-right input {
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.menu {
+    background: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.menu li:hover {
+    opacity: 0.7;
+}
+
+.menu .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sign-out {
+    background: #3b82f6;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sign-out:hover {
+    background: #2563eb;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-card {
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header-img {
+    height: 60px;
+    background: #3b82f6;
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #1e3a8a;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.profile-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.profile-info a:hover {
+    text-decoration: underline;
+}
+
+.sidebar .card {
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.education {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.edu-card h4 {
+    margin-bottom: 5px;
+    color: #1e3a8a;
+}
+
+.edu-card p {
+    margin-bottom: 5px;
+}
