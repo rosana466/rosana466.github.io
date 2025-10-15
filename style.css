@@ -1,163 +1,102 @@
-* {
+body{
+    align-items: center;
+}
+
+.nav {
+    background-color: rgb(95, 95, 95);
+    padding: 10px;
+    color: rgb(105, 21, 122);
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    width: 1000px;
+    height: 50px;
+}
+
+
+.nav-title {
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+
+.nav-links{
+   
+    display: inline-block;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f4f8;
-    color: #333;
-}
-
-.navbar {
-    background: #e0e6ed;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-left input {
-    width: 400px;
-    margin-left: 10px;
-    border: 1px solid #bbb;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.nav-right input {
-    padding: 5px;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-}
-
-.menu {
-    background: #1e3a8a;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 20px;
-    align-items: center;
-}
-
-.menu ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+     justify-content: space-between;
 }
 
-.menu li {
-    cursor: pointer;
-    transition: opacity 0.3s ease;
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
 }
 
-.menu li:hover {
-    opacity: 0.7;
+
+.nav-links li {
+    display: inline;
+    margin-right: 50px;
+  
 }
 
-.menu .active {
-    font-weight: bold;
-    text-decoration: underline;
+
+.active{
+    border: 4px solid rgb(0, 0, 0);
+    padding-right: 250px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background-color: rgb(148, 188, 224);
 }
 
-.sign-out {
-    background: #3b82f6;
-    border: none;
-    padding: 8px 14px;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.ninja1{
+    border: 5px solid rgb(164, 48, 100);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 500px;
+   height: 210px;
+   
 }
 
-.sign-out:hover {
-    background: #2563eb;
+.ninja2{
+    border: 5px solid rgb(156, 83, 188);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 500px;
+   height: 210px;
+   
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
+h4{
+    display: inline;
+    padding-left: 40px;
+    position: absolute;
+   top: 200px;
 
-.profile-card {
-    background: white;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    overflow: hidden;
 }
-
-.header-img {
-    height: 60px;
-    background: #3b82f6;
+.derecha{
+    border: 5px solid rgb(116, 28, 127);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 180px;
+height: fit-content;
+    display: block;
+    margin-left: 20px;
+    
 }
-
-.profile-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.avatar {
-    width: 60px;
-    height: 60px;
-    background: #1e3a8a;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-}
-
-.profile-info a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #2563eb;
-    text-decoration: none;
-}
-
-.profile-info a:hover {
-    text-decoration: underline;
-}
-
-.sidebar .card {
-    background: white;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 15px;
-}
-
-.sidebar ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-.sidebar li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 0;
-}
-
-.sidebar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.education {
-    grid-column: 1 / -1;
-    background: white;
-    padding: 20px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-}
-
-.edu-card h4 {
-    margin-bottom: 5px;
-    color: #1e3a8a;
-}
-
-.edu-card p {
-    margin-bottom: 5px;
+.todo{
+    display: inline-flex;
 }
